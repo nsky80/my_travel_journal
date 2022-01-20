@@ -1,11 +1,13 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import Card from './Components/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="./images/nav-icon.png" className="App-logo" alt="logo" />
-      </header>
+      <Navbar />
+      <Card 
+      />
     </div>
   );
 }
