@@ -1,25 +1,56 @@
 nav {
-  height: 70px;
-  display: flex;
-  padding: 20px 36px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-  background-color: red;
+  width: 100%;
+  background-color: #f55a5a;
+  overflow: auto;
+  /* height: 70px; */
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 8, 0, 0.1);
+  /* display: block; */
 }
 
-.nav--logo{
-  /* height: 40vmin; */
-  pointer-events: none;
+nav a {
+  display: block;
+  float: none;
+  /* padding: 12px; */
+  color: white;
+  text-decoration: none;
+  margin:0;
+  
 }
 
-.nav--text{
-  padding-bottom: 20px;
+nav a:hover {
+  background-color: #ff4343;
 }
 
-.App {
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  nav a {
+    float: none;
+    display: block;
+  }
+}
+
+nav ul {
+  margin:0;
+  list-style: none;
   text-align: center;
 }
 
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
 
+}
+.nav--logo {
+  height: 5vmin;
+  width: auto;
+  pointer-events: none;
+  vertical-align: middle;
+  margin-left: -10px;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .nav--logo {
@@ -27,12 +58,13 @@ nav {
   }
 }
 
-
 @keyframes nav--logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
