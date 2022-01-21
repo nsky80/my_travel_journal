@@ -68,15 +68,15 @@ nav ul li {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-height: 400px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  max-height: 450px;
   margin: auto;
   /* text-align: center; */
-  font-family: arial;
   padding: 20px 50px 20px 50px;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   font-family: 'Poppins', sans-serif;
   color: #2b283a;
+  background-color: white;
 }
 
 .card--image {
@@ -126,13 +126,13 @@ nav ul li {
 .column-1 {
   flex: 30%;
   padding: 5px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .column-2 {
   flex: 70%;
   padding: 5px;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -151,7 +151,7 @@ nav ul li {
     }
 
     .card {
-      padding: 0px;
+      padding: 10px 0px 10px 0px;
     }
 
     .card--info--section{
@@ -160,6 +160,6 @@ nav ul li {
   }
 }
 
-hr{
-  margin:0;
+br{
+  background-color: white;
 }

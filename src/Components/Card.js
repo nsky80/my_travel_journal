@@ -18,7 +18,7 @@ export default function Card(props) {
                     </div>
                 </div>
             </div>
-            <hr />
+            {/* <hr /> */}
         </div>
     )
 }
