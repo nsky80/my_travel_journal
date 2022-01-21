@@ -1,3 +1,8 @@
+.App {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
 nav {
   width: 100%;
   background-color: #f55a5a;
@@ -13,8 +18,8 @@ nav a {
   /* padding: 12px; */
   color: white;
   text-decoration: none;
-  margin:0;
-  
+  margin: 0;
+
 }
 
 nav a:hover {
@@ -25,15 +30,8 @@ nav a:hover {
   background-color: #04AA6D;
 }
 
-@media screen and (max-width: 500px) {
-  nav a {
-    float: none;
-    display: block;
-  }
-}
-
 nav ul {
-  margin:0;
+  margin: 0;
   list-style: none;
   text-align: center;
 }
@@ -43,6 +41,7 @@ nav ul li {
   vertical-align: middle;
 
 }
+
 .nav--logo {
   height: 5vmin;
   width: auto;
@@ -68,3 +67,59 @@ nav ul li {
   }
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-height: 300px;
+  margin: auto;
+  /* text-align: center; */
+  font-family: arial;
+  padding: 0px 50px 0px 50px;
+  background-color: cadetblue;
+
+}
+
+.card--image {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-1 {
+  flex: 25%;
+  padding: 5px;
+  background-color: blue;
+}
+
+.column-2 {
+  flex: 75%;
+  padding: 5px;
+  background-color: burlywood;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    padding: 0px 50px 0px 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      display: block;
+    }
+
+    .App {
+      padding: 0px;
+    }
+
+    .card {
+      padding: 0px;
+    }
+  }
+}
+
+hr{
+  margin:0;
+}
